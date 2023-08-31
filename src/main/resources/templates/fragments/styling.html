@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Blog Project</title>
+	<div th:fragment="head-style">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<!--
+			Realizing that I could, in fact, put the npm link in the header and have everything work was a lightbulb moment.
+			It does mean I'm not entirely sure what the difference between that and using the webjars is.
+			I would guess that it has to do with the potential for the npm link to be unstable? Or that it's dependent on Node.js? Whereas webjars are built into SpringBoot.
+			I'm not actually sure, but it works for my purpose here.
+		-->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+	    <link href="../../css/stylesheet.css" rel="stylesheet">
+	    </div>
+</head>
+<body>
+
+<div th:fragment="body-links">
+	<script src="../../webjars/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+	<script src="../../webjars/jquery/1.9.1/jquery.min.js"></script>
+	</div>
+</body>
+</html>

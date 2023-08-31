@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Character Gallery - The Spook Saloon</title>
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Parisienne&display=swap" rel="stylesheet">
+    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    
+		<div th:replace="/fragments/styling :: head-style" ></div>
+    
+        <!-- All the images in this section are drawn by yours truly!
+        In the future I might add drawings others have done of my characters as well -
+        with credit, of course. -->
+
+	</head>
+<body>
+
+	  <div th:replace="fragments/navbars :: nav-head" ></div>
+
+<!-- This page definitely still has a lot of work left to put in.
+Part of it is that all my images have different dimensions to start off.
+I might make more uniform icon versions in the future...
+and then make them links maybe? And have bios/descriptions too? -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="/my-drawings/cam.JPEG" class="img-fluid">    
+            </div>
+            <div class="col-md-4">
+                <img src="/my-drawings/leyth.JPG" class="img-fluid">            
+            </div>
+            <div class="col-md-4">
+                <img src="/my-drawings/scurry.jpg" class="img-fluid">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="/my-drawings/lynne1.JPG" class="img-fluid">
+            </div>
+            <div class="col-md-4">
+                <img src="/my-drawings/chase.jpg" class="img-fluid">
+            </div>
+            <div class="col-md-4">
+                <img src="/my-drawings/kai.jpg" class="img-fluid">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="/my-drawings/ven1.jpg" class="img-fluid">
+            </div>
+            <div class="col-md-4">
+                <img src="/my-drawings/ven2.jpg" class="img-fluid">
+            </div>
+            <div class="col-md-4">
+                <img src="/my-drawings/chiara.jpg" class="img-fluid">
+            </div>
+        </div>
+
+
+	  <div th:replace="fragments/navbars :: nav-foot" ></div>
+
+
+<div th:replace="/fragments/styling :: body-links" ></div>
+</body>
+</html>

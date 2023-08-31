@@ -1,0 +1,96 @@
+.nav-areas {
+    background-color: #333333;
+}
+
+.navbar-brand {
+    font-family: 'Parisienne', cursive;
+    font-size: 27px;
+    color:lightgrey;
+}
+
+@keyframes colorChange {
+    from { color: lightgray; text-shadow: none;}
+    to { color: lightblue; text-shadow: 3px 3px 3px lightblue;
+    }
+}
+
+@keyframes fadeOut {
+    0%, 100% { opacity: 1.0; }
+    15% { opacity: 0.0 ; }
+}
+
+.navbar-brand:hover {
+    animation-name: colorChange;
+    animation-duration: 5s;
+    color: lightblue;
+    text-shadow: 3px 3px 3px lightblue;
+}
+
+.navbar-brand img:hover {
+    animation-name: fadeOut;
+    animation-duration: 5s;
+}
+
+.nav-link {
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    font-size: 20px;
+    color: orange;
+    padding: 0 12px 0 12px;
+    margin: 0 2rem 0 2rem;
+}
+
+.nav-link:hover {
+    color: orange;
+    border-radius: 15px;
+    background-color: #555555;
+    text-shadow: 1px 1px 1px white;
+}
+
+
+.navbar-toggler {
+    background-color: lightgray;
+}
+
+.top_text {
+    margin-top: 2%;
+    font-size: 6rem;
+    text-align: center;
+    font-family: 'Parisienne', cursive;
+}
+
+#spook_saloon {
+    display: inline-block;
+    font-size: 8rem;
+    text-shadow: 5px 5px 5px lightblue;
+    color: #6699cc;
+}
+
+p {
+    margin: 5% 0 5% 0;
+    padding: 1%;
+    border-width: 3px;
+    border-style: dashed;
+    border-color: #555555;
+    border-radius: 10px;
+}
+
+/*
+	Still haven't quite figured out how to manage margins where a fixed element is involved.
+*/
+.card {
+	margin: 4em;
+}
+
+footer {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    bottom: 5px;
+}
+
+footer .nav-link {
+    margin-top: 6px;
+    margin-bottom: 6px;
+    font-size: 16px;
+}

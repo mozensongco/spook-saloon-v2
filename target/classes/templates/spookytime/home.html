@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    
+	    <title>Home - The Spook Saloon</title>
+	
+	    <link rel="preconnect" href="https://fonts.googleapis.com">
+	    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+	    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Parisienne&display=swap" rel="stylesheet">
+	
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+	
+		<div th:replace="/fragments/styling :: head-style" ></div>
+	
+	</head>
+<body>
+
+	<!--
+		Porting all of my Spook Saloon code from the beginning of the bootcamp (lecture 6!) was a lot easier than I thought it would be.
+		I can definitely feel SpringBoot pulling its weight for me in that department!
+		Between the fragments standardization and the controller features it's a lot more streamlined now.
+	-->
+
+	  <div th:replace="fragments/navbars :: nav-head" ></div>
+
+    <h1 class="top_text">Welcome to
+    <br><span id="spook_saloon" class="animate__animated animate__tada animate__repeat-3">Spook Saloon 2:</span>
+    <br>Electric Boogaloo-n!
+    </h1>
+
+    <h4 style="text-align: center;">I'm so glad I realized I could make that joke.</h4>
+
+<!-- I still want to have this intro here, but it wouldn't be in a multi-column grid... 
+
+    <p>This is a little space for me to talk about my favorite thing ever:
+        <br><span>TTRPGs!</span>
+        <br>(it stands for "tabletop roleplaying games")
+        <br> You've probably heard of Dungeons & Dragons - that's just one of the many TTRPGs out there!
+    </p>
+
+    The content below will probably be moved to the planned "Spook Saloon Staff" page eventually.
+-->
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-4">
+            <img src="my-drawings/me-but-also-ven.jpeg" class="img-fluid">
+        </div>
+        <div class="col-md-8">
+            <p>
+                Mozen here!
+                <br>In the time since I coded... I mean opened the first Spook Saloon, I've created a few new characters that aren't on this site just yet.
+                (That's because I haven't drawn them... yet.) Not so much progress on the creative front in general, really, but I should have more time to get back to those projects soon.
+                <br>
+                <br>The nice thing about this second Spook Saloon is that it's a reminder of why I really want to learn to code - expanding what I can do with my creative streak!
+                I have this idea in my head that I could code my own website someday as a portfolio of all my creative works and have it be a demonstration of my coding skills as well.
+                <br>
+                <br>But in the meantime - have a seat! Grab a drink! Maybe join our staff? (I mean, not really, but the form was fun to make!)
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8">
+            <p>
+                This is a different Mr. Cloud from the Mr. Cloud over in the first Spook Saloon, by the way. It's kind of like a Nurse Joy thing, where they're all related and look exactly the same,
+                but are still distinct.
+                <br>
+                <br>This Mr. Cloud is fond of puns! He wants a jukebox in here someday. (No idea how I'm gonna code that in just yet, but it seems like it would be fun?)
+                <br>
+                <br>"My house got hit with a pretty big storm last night and I lost a quarter of my roof - oof!"
+                <br>
+                <br>That Mr. Cloud. He's such a jokester.
+            </p>
+        </div>
+        <div class="col-md-4">
+            <img src="my-drawings/my-logo.png" class="img-fluid">
+        </div>
+    </div>
+</div>
+
+	  <div th:replace="fragments/navbars :: nav-foot" ></div>
+
+
+	<div th:replace="/fragments/styling :: body-links" ></div>
+</body>
+</html>
