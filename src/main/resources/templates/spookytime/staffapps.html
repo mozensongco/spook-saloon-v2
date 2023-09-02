@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Now accepting staff applications! - The Spook Saloon</title>
+        
+		<div th:replace="/fragments/styling :: head-style" ></div>
+    
+	</head>
+<body>
+
+	  <div th:replace="fragments/navbars :: nav-head" ></div>
+
+		<!--
+			Future edits:
+			- pronouns field with dropdown menu options
+			- either validation for the email field in the controller, or exception checks similar to the filter program from the File Reader homework
+			- A file submission field? Either for an image (as a way to accept character gallery submissions in the future) or for a resume of some kind?
+		-->
+
+
+		<div class="container">
+		<h3>Please use the form below to submit an application!</h3>
+		<form action="#" th:action="@{/spookytime}" th:object="${staffProfile}" method="post">
+ 		
+ 		<div class="form-group">
+			    <input type="text" class="form-control" placeholder="What would you like us to call you?" th:field="*{name}" /></td>
+ 		</div>
+ 		
+ 		<div class="form-group">
+ 			<input type="text" class="form-control" placeholder="Where can we contact you? (Email, please!)" th:field="*{email}" />
+ 		</div>
+ 		
+ 		<button class="btn btn-secondary">Submit!</button>
+</form>
+</div>
+
+	  	  <div th:replace="fragments/navbars :: nav-foot" ></div>
+
+
+<div th:replace="/fragments/styling :: body-links" ></div>
+</body>
+</html>

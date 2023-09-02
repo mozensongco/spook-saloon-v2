@@ -15,12 +15,16 @@
 	                The Spook Saloon
 	            </a>
 	        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	            <!--
+					I'm also still not entirely sure why the navbar toggler doesn't actually display the tabs when the content is collapsed on smaller screens.
+					When I was having this problem with the first version of the Spook Saloon, I think it had something to do with the included span element in the navbar?
+				-->
 	            <span class="navbar-toggler-icon"></span>
 	            </button>
 	            <div class="collapse navbar-collapse" id="navbarSupportedContent">
 	                <ul class="navbar-nav">
 	                    <li class="nav-item">
-	                    	<a th:href="@{/}" class="nav-link" aria-current="page">Home</a>
+	                    	<a th:href="@{/}" class="nav-link">Home</a>
 	                    </li>
 	                    <li class="nav-item">
 		                    <a th:href="@{/spookytime/gallery}" class="nav-link">Character Gallery</a>
@@ -30,7 +34,13 @@
 	                    </li>
 	                </ul>    
 	            </div>
-	                        <span style="color: lightgray;">psst! we're accepting staff applications!</span>
+	            
+	            <!--
+					I'm on the fence as to whether or not I want this to be in the navbar for the app and submission pages as well.
+					I suppose I'd have a disabled tag in the span CSS to hide it depending on the page?
+					Or another fragment with a copy of the navbar code, but with the span excluded?
+				-->
+	            <span>psst! we're accepting staff applications!<br>click <a th:href="@{/spookytime/staffapps}">here!</a></span>
 	        </div>
 	    </nav>
 	    
@@ -41,7 +51,7 @@
 	        <div class="container-fluid nav-areas">
 	            <ul class="nav">
 	                    <li class="nav-item">
-	                    	<a th:href="@{/}" class="nav-link" aria-current="page">Home</a>
+	                    	<a th:href="@{/}" class="nav-link">Home</a>
 	                    </li>
 	                    <li class="nav-item">
 		                    <a th:href="@{/spookytime/gallery}" class="nav-link">Character Gallery</a>

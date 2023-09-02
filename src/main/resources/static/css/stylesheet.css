@@ -1,3 +1,7 @@
+body {
+	background-color: ghostwhite;
+}
+
 .nav-areas {
     background-color: #333333;
 }
@@ -66,6 +70,16 @@
     color: #6699cc;
 }
 
+a {
+	text-decoration: none;
+	color: #6699cc;	
+}
+
+span {
+	text-align: right;
+	color: lightblue;
+}
+
 p {
     margin: 5% 0 5% 0;
     padding: 1%;
@@ -75,11 +89,35 @@ p {
     border-radius: 10px;
 }
 
+h3 {
+	text-align: center;
+	margin-bottom: 2%;
+}
+
+.container {
+	text-align: center;
+	background-color: lightgray;
+	margin-top: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-radius: 5px; 
+
+}
+
+.form-group {
+	margin: 2%;
+}
+
 /*
-	Still haven't quite figured out how to manage margins where a fixed element is involved.
+	Still haven't quite figured out how to manage margins where a fixed element is involved...
 */
 .card {
-	margin: 4em;
+	margin-bottom: 4em;
+}
+
+.card-title {
+	text-align: center;
+	font-size: 30px;
 }
 
 footer {

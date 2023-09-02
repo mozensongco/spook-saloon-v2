@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Successful submission! - The Spook Saloon</title>
+        
+		<div th:replace="/fragments/styling :: head-style" ></div>
+    
+	</head>
+<body>
+
+	  <div th:replace="fragments/navbars :: nav-head" ></div>
+
+	<!--
+		I'd definitely like to spruce this up in the future, too, but ah well!
+	-->
+    <h3>Thanks for submitting an appplication, <span th:text="${name}"/>!<br>
+    We'll be sure to contact you at <span th:text="${email}"/> shortly.
+    <br>(It'll probably be from one of the other Mr. Clouds.)</h3>
+	  
+	  
+	  	  <div th:replace="fragments/navbars :: nav-foot" ></div>
+
+
+<div th:replace="/fragments/styling :: body-links" ></div>
+</body>
+</html>
